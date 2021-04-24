@@ -1,4 +1,57 @@
-{/* <section class="page-section" id="projects">
+import React, { useState } from 'react';
+import Modal from '../Modal';
+
+
+
+const PortfolioList = ({ category }) => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [currentPortfolio, setCurrentPortfolio] = useState();
+    const [Portfolios] = useState([
+        {
+            name: 'e-z-Budget',
+            description: 'Full stack group project'
+        },
+        {
+            name: 'e-z-Budget',
+            description: 'Full stack group project'
+        },
+        {
+            name: 'e-z-Budget',
+            description: 'Full stack group project'
+        },
+        {
+            name: 'e-z-Budget',
+            description: 'Full stack group project'
+        },
+    ]);
+        
+    const currentPortfolios = Portfolios.filter((Portfolio) => Portfolio.category === category);
+    const toggleModal = (image, i) => {
+        setCurrentPortfolio({ ...image, index: i })
+        setIsModalOpen(!isModalOpen);
+    }
+        
+    return (
+        <div>
+            {isModalOpen && (
+            <Modal currentPortfolio={currentPortfolio} onClose={toggleModal}/>
+            )}
+            <div className="flex-row">
+                {currentPortfolios.map((image, i) => (
+                    <img
+                        src={require(`../../assets/projects/${category}/${i}.jpg`).default}
+                        alt={image.name}
+                        className="img-thumbnail mx-1"
+                        onClick={() => toggleModal(image, i)}
+                        key={image.name}
+                    />
+                ))}
+            </div>
+        </div>
+    );
+};
+export default PortfolioList;
+/* <section class="page-section" id="projects">
 <h2>What I've Done So Far</h2>
 <div class="grid-container">
 
@@ -28,4 +81,4 @@
         <h3>Horiseon Marketing</h3>
         <span>HTML/CSS</span>
     </div>
-</a> */}
+</a> */
