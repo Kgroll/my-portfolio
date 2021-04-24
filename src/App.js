@@ -1,17 +1,22 @@
 import React, { useState } from 'react';
-import About from './components/About';
+import Header from './components/Header';
 import ContactForm from './components/Contact';
 import Nav from './components/Nav';
 import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
+import Footer from './components/Footer';
 
 
 function App() {
-  const [categories] = useState([ 
+  const [categories] = useState([
     {
-      name: '', desciption: ''},
-    ]);
-const [currentCategory, setCurrentCategory] = useState(categories[0]);
-const [contactSelected, setContactSelected] = useState(false);
+      name: '',
+      description: ''
+    },
+
+  ]);
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const [contactSelected, setContactSelected] = useState(false);
 
 
   return (
@@ -26,15 +31,18 @@ const [contactSelected, setContactSelected] = useState(false);
       <main>
         {!contactSelected ? (
           <>
-            <Portfolio currentCategory={currentCategory}></Portfolio>
-        <About></About>
-     </>
+            <Header></Header>
+            <Portfolio currentCategory={currentCategory}></Portfolio>            
+            
+          </>
         ) : (
-      <ContactForm></ContactForm>
+          <ContactForm></ContactForm>
         )}
+        <Resume></Resume>
       </main>
+      <Footer></Footer>
     </div>
-     
+
   );
 }
 

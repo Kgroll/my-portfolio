@@ -12,8 +12,8 @@ const PortfolioList = ({ category }) => {
             description: 'Full stack group project'
         },
         {
-            name: 'e-z-Budget',
-            description: 'Full stack group project'
+            name: 'reFrain',
+            description: 'Group project'
         },
         {
             name: 'e-z-Budget',

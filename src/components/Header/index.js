@@ -1,7 +1,7 @@
 import React from 'react';
 import coverImage from '../../assets/cover/cover-image.png';
 
-function About() {
+function Header() {
   return (
     <section className="my-5" >
       <h1 id='about'>A little bit about me</h1>
@@ -23,4 +23,4 @@ function About() {
   );
 }
 
-export default About;
+export default Header;
