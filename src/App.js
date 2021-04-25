@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import About from './components/About';
 import Header from './components/Header';
 import ContactForm from './components/Contact';
 import Nav from './components/Nav';
@@ -31,10 +32,11 @@ function App() {
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
       ></Nav>
+      <Header></Header>
       <main>
         {!contactSelected ? (
           <>
-            <Header></Header>
+            <About></About>
             <Portfolio currentCategory={currentCategory}></Portfolio>            
             <Project></Project>
           </>

@@ -16,11 +16,7 @@ function Nav(props) {
   }, [currentCategory]);
 
   return (
-    <header className="flex-row px-1">
-      <h2>
-        <a data-testid="link" href="/">
-          <span role="img" aria-label="camera"  > 📸</span> Kristen Groller</a>
-      </h2>
+  
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
@@ -41,9 +37,14 @@ function Nav(props) {
             </a>
           </li>
           {/* contact */}
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
+          <li className="mx-2">
+            <a data-testid="contact" href="#contact" onClick={() => setContactSelected(true)}>
+              Contact
+            </a>
           </li>
+          {/* <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+            <span onClick={() => setContactSelected(true)}>Contact</span>
+          </li> */}
           {categories.map((category) => (
             <li
               className={`mx-1 ${
@@ -63,7 +64,7 @@ function Nav(props) {
           ))}
         </ul>
       </nav>
-    </header>
+  
   );
 }
 

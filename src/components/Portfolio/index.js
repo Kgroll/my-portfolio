@@ -1,19 +1,46 @@
 import React from 'react';
-// import myPic from '../../assets/mypic/my-pic.png';
+import { capitalizeFirstLetter } from '../../utils/helpers';
+import photo from '../../assets/projects/0.jpg';
 
-function Portfolio() {
-  return (
-    <section className="my-5" >
-      <h1 id="portfolio">My Portfolio</h1>
-      <div >
+function Portfolio(props) {
+  
+    const currentCategory = {
+      name: "Portfolio",
+      description:
+        "Many projects",
+    };
+    return (
+      <section>
+        <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
+        {/* <p>{currentCategory.name}</p> */}
+        <div className="flex-row">
+            <img
+              src={photo}
+              alt="Project Example"
+              className="img-thumbnail mx-1"
+            />
+        </div>
+      </section>
+    );
+  }
+
+
+
+
+
+
+//   return (
+//     <section className="my-5" >
+//       <h1 id="portfolio">My Portfolio</h1>
+//       <div >
      
 
         
-      </div>
-    </section>
+//       </div>
+//     </section>
 
-  );
-}
+//   );
+// }
 
 export default Portfolio;
 
