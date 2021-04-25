@@ -11,13 +11,12 @@ import Project from './components/Project';
 
 
 
+
 function App() {
   const [categories] = useState([
-    {
-      name: '',
-      description: ''
+    { name: '', description: '',
     },
-
+    
   ]);
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
   const [contactSelected, setContactSelected] = useState(false);

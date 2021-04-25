@@ -5,11 +5,11 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #5a8b8d;
+  --primary: #8cc1c2;
   --secondary: #F3A847;
   --tertiary: #B12704;
-  --light: #fafafa;
-  --dark: rgb(95, 94, 94);
+  --light: rgb(54, 37, 54);
+  --dark: rgb(107, 103, 103);
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -123,8 +123,12 @@ button[disabled] {
 }
 
 img {
-  max-width: 100%;
+  background-image: url("./assets/mypic/mypic.jpg");
+  width: 300px;
+  height: 350px;
+  margin-bottom: 50px;
 }
+
 
 span[role="img"] {
   cursor: default;
@@ -360,7 +364,7 @@ footer {
   grid-template-columns: 30px 30px;
 } 
 
- /* .e-z-Budget {
+ .e-z-Budget {
   background-image: url("./assets/projects/0.jpg");
   width: 300px;
   height: 300px;
@@ -374,19 +378,86 @@ footer {
   height: 300px;
   margin-bottom: 50px;
   cursor: pointer;
-} */
-/* .run-buddy {
-  background-image: url("./assets/projects/2.png");
+} 
+
+.run-buddy {
+  background-image: url("./assets/projects/2.jpg");
+    width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+  cursor: pointer;
 }
 
 .Horiseon {
-  background-image: url("./assets/projects/3.png");
+  background-image: url("./assets/projects/3.jpg");
+    width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+  cursor: pointer;
 }
 
 .weather-dashboard {
-  background-image: url("./assets/projects/4.png");
+  background-image: url("./assets/projects/4.jpg");
+    width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+  cursor: pointer;
 }
 .easy-e {
   background-image: url("./assets/projects/5.jpg");
-} */
+    width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
 /*end portfolio images*/
+.grid.container.project {
+  display: grid;
+  /* grid-template-columns: repeat(12, 1fr); */
+  grid-auto-rows: minmax(150px, 1fr);
+  grid-auto-flow: dense;
+  column-gap: 10px;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  
+  padding: 10px;
+}
+
+.grid-item {
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  grid-column: span 3;
+  background-color: #a3989d; 
+  color: #192231;
+  min-height: 150px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  transition: all 0.5s;  
+  font-size: 0.9rem;     
+}
+
+
+/*grid child*/
+
+.grid-item:first-child {
+ grid-column: span 8;
+ grid-row: span 2;  
+}
+
+
+.grid-item:hover {
+background-color: transparent;
+}
+
+.grid-item div {
+background-color: transparent;
+padding: 8px 10px;
+}
+.grid-item h3 {
+  font-weight: bold;
+font-size: 1.6rem;
+
+}

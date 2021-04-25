@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
-
 
 function Nav(props) {
   const {
@@ -8,9 +7,10 @@ function Nav(props) {
     setCurrentCategory,
     contactSelected,
     currentCategory,
-    setContactSelected
+    setContactSelected,
   } = props;
 
+  
   useEffect(() => {
     document.title = capitalizeFirstLetter(currentCategory.name);
   }, [currentCategory]);
@@ -38,10 +38,10 @@ function Nav(props) {
           </li>
           {/* contact */}
           <li className="mx-2">
-            <a data-testid="contact" href="#contact" onClick={() => setContactSelected(true)}>
-              Contact
-            </a>
-          </li>
+           <a data-testid="contact" href="#contact" onClick={() => setContactSelected(false)}>
+           Contact
+         </a>
+       </li>
           {/* <li className={`mx-2 ${contactSelected && 'navActive'}`}>
             <span onClick={() => setContactSelected(true)}>Contact</span>
           </li> */}
@@ -64,8 +64,6 @@ function Nav(props) {
           ))}
         </ul>
       </nav>
-  
-  );
-}
-
+  )
+};
 export default Nav;

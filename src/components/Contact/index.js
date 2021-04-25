@@ -36,6 +36,8 @@ function ContactForm() {
   return (
     <section>
       <h1 data-testid="h1tag">Contact me</h1>
+      <a href="https://groller@rogers.com" class="fa fa-envelope"></a>
+      {/* <i class="fa fa-mobile" aria-hidden="true"></i> */}
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>

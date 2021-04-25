@@ -3,6 +3,8 @@ import coverImage from '../../assets/cover/cover-image.png';
 
 function About() {
   return (
+
+    
     <section className="my-5" >
       <h1 id='about'>A little bit about me</h1>
       <div
