@@ -99,6 +99,8 @@ header a {
   color: var(--light);
 }
 
+
+
 button {
   font-size: 1rem;
   text-decoration: none;
@@ -287,6 +289,7 @@ a {
 	padding: 2px 4px;
 	margin-left: -2px;
 	margin-right: -2px;
+  font-size: 28px;
 	
 }
 
@@ -335,8 +338,8 @@ footer {
 
 .fa {
   padding: 20px;
-  font-size: 30px;
-  width: 50px;
+  font-size: 40px;
+  width: 60px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -345,3 +348,26 @@ footer {
 .fa:hover {
     opacity: 0.7;
 }
+ /*portfolio images*/
+
+ .e-z-Budget {
+  background-image: url("./assets/projects/0.jpg");
+}
+
+/* .run-buddy {
+  background-image: url("/assets/images/hero-bg.jpg");
+}
+
+.Horiseon {
+  background-image: url("/assets/images/digital-marketing-meeting.jpg");
+}
+.REFRAIN {
+  background-image: url("/assets/images/finalRefRAIN.png");
+}
+.future-projects1 {
+  background-image: url("/assets/images/fireworks.jpg");
+}
+.future-projects2 {
+  background-image: url("/assets/images/wall.jpg");
+} */
+/*end portfolio images*/

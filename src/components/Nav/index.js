@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
-import myPic from '../../assets/mypic/my-pic.jpg';
+
 
 function Nav(props) {
   const {
-    // categories = [],
-    // setCurrentCategory,
+    categories = [],
+    setCurrentCategory,
     contactSelected,
     currentCategory,
     setContactSelected
@@ -19,7 +19,7 @@ function Nav(props) {
     <header className="flex-row px-1">
       <h2>
         <a data-testid="link" href="/">
-          <span role="img" aria-label="camera" onClick="myPic" > 📸</span> Kristen Groller</a>
+          <span role="img" aria-label="camera"  > 📸</span> Kristen Groller</a>
       </h2>
       <nav>
         <ul className="flex-row">
@@ -34,16 +34,33 @@ function Nav(props) {
               Portfolio
             </a>
           </li>
-          {/* contact */}
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
-          </li>
-          {/* resume */}
-          <li className="mx-2">
+           {/* resume */}
+           <li className="mx-2">
             <a data-testid="resume" href="#resume" onClick={() => setContactSelected(false)}>
               Resume
             </a>
           </li>
+          {/* contact */}
+          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+            <span onClick={() => setContactSelected(true)}>Contact</span>
+          </li>
+          {categories.map((category) => (
+            <li
+              className={`mx-1 ${
+                currentCategory.name === category.name && !contactSelected && 'navActive'
+                }`}
+              key={category.name}
+            >
+              <span
+                onClick={() => {
+                  setCurrentCategory(category);
+                  setContactSelected(false);
+                }}
+              >
+                {capitalizeFirstLetter(category.name)}
+              </span>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

@@ -14,9 +14,10 @@ function Header() {
           color: "#f5f5f5"
         }}
       >
-        <p>Write a blurb about me </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum. Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh. Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
-       </p>
+        <p> This background picture is one of my favourite places in the world</p><p> I hope to, some day, be able to spend more time watching sunsets over many other lakes! </p>
+        <p> At the present time I am a Medical Sonographer specializing in High Risk Obstetrics.</p> 
+        <p>I have always had an interest in the latest and greatest technology and am at a point where a career change will be welcome.</p> 
+        <p>I look forward to the challenges awaiting me!</p>
       </div>
     </section>
 

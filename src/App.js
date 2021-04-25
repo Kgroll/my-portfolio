@@ -5,6 +5,9 @@ import Nav from './components/Nav';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+import Project from './components/Project';
+
+
 
 
 function App() {
@@ -33,7 +36,7 @@ function App() {
           <>
             <Header></Header>
             <Portfolio currentCategory={currentCategory}></Portfolio>            
-            
+            <Project></Project>
           </>
         ) : (
           <ContactForm></ContactForm>
