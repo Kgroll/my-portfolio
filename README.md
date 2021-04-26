@@ -1,21 +1,24 @@
-# My Portfolio
+# Repository Title:   Not Just Another Budget App     
+    
 
-Table of Contents
-Description
+  ## Table of Contents
 
-Installation
+  * [Description](#description)
 
-Link
+  * [Installation](#installation)
 
-Screenshots
+  * [Link](#link)
 
-Contributing
+  * [Screenshots](#screenshots)
 
-Tests
+  * [Contributing](#contributing)
 
-Credits
+  * [Tests](#tests)
 
-Questions
+  * [Credits](#credits)
+
+  * [Questions](#questions)
+
 
 
 
