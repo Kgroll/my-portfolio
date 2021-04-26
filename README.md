@@ -1,14 +1,15 @@
-# Getting Started with Create React App
+# My Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This portfolio was built with the React App
 
-## Available Scripts
+##Description
 
-In the project directory, you can run:
+A single webpage introducing myself to prospective employers. As it is my first time using  
+React it is fairly basic but the more I read the more I want to add to it!
 
-### `npm start`
+##
 
-Runs the app in the development mode.\
+`npm start`Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
