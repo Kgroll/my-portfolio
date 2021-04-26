@@ -58,6 +58,8 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 
-##Questions
+#Questions
 
+ GitHub Link:   https://github.com/Kgroll
 
+   If you have any questions please open an issue in GitHub or contact Kristen Groller at groller@rogers.com.
