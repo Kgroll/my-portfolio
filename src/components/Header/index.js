@@ -1,10 +1,12 @@
 import React from 'react';
 
-
 function Header() {
+
   return (
-    <section class="page-section" id="about">
-      <h3>Kristen Groller</h3>
+    <section class="page-section" id="home" class="flex-container">
+      <h1> Hi! My name is Kristen Groller</h1>
+      <h2> Novice Developer</h2>
+      <h2>Welcome to my Portfolio!</h2>
       <img src="/assets/mypic/mypic.jpg" alt=""></img>
     </section>
   )

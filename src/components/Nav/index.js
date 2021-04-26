@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, navBar } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
+
 
 function Nav(props) {
   const {
@@ -10,60 +11,61 @@ function Nav(props) {
     setContactSelected,
   } = props;
 
-  
+
   useEffect(() => {
     document.title = capitalizeFirstLetter(currentCategory.name);
   }, [currentCategory]);
 
   return (
-  
-      <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
-            <a data-testid="header" href="#about" onClick={() => setContactSelected(false)}>
-              About me
+
+    <navBar>
+      <ul className="flex-row" >
+        <li className="mx-2">
+          <a className="header" href="#about" onClick={() => setContactSelected(false)}>
+            About me
             </a>
-          </li>
-          {/* portfolio */}
-          <li className="mx-2">
-            <a data-testid="portfolio" href="#portfolio" onClick={() => setContactSelected(false)}>
-              Portfolio
+        </li>
+        {/* portfolio */}
+        <li className="mx-2">
+          <a className="portfolio" href="#portfolio" onClick={() => setContactSelected(false)}>
+            Portfolio
             </a>
-          </li>
-           {/* resume */}
-           <li className="mx-2">
-            <a data-testid="resume" href="#resume" onClick={() => setContactSelected(false)}>
-              Resume
+        </li>
+        {/* resume */}
+        <li className="mx-2">
+          <a className="resume" href="#resume" onClick={() => setContactSelected(false)}>
+            Resume
             </a>
-          </li>
-          {/* contact */}
-          <li className="mx-2">
-           <a data-testid="contact" href="#contact" onClick={() => setContactSelected(false)}>
-           Contact
-         </a>
-       </li>
-          {/* <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+        </li>
+        {/* contact */}
+        <li className="mx-2">
+          <a className="contact" href="#contact" onClick={() => setContactSelected(true)}>
+            Contact Me
+            </a>
+        </li>
+        {/* <li className={`mx-2 ${contactSelected && 'navActive'}`}>
             <span onClick={() => setContactSelected(true)}>Contact</span>
           </li> */}
-          {categories.map((category) => (
-            <li
-              className={`mx-1 ${
-                currentCategory.name === category.name && !contactSelected && 'navActive'
-                }`}
-              key={category.name}
+        {categories.map((category) => (
+          <li
+            className={`mx-1 ${currentCategory.name === category.name && !contactSelected && 'navActive'
+              }`}
+            key={category.name}
+          >
+            <span
+              onClick={() => {
+                setCurrentCategory(category);
+                setContactSelected(false);
+              }}
             >
-              <span
-                onClick={() => {
-                  setCurrentCategory(category);
-                  setContactSelected(false);
-                }}
-              >
-                {capitalizeFirstLetter(category.name)}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </nav>
-  )
-};
+              {capitalizeFirstLetter(category.name)}
+            </span>
+          </li>
+        ))}
+
+      </ul>
+    </navBar>
+  );
+}
+
 export default Nav;

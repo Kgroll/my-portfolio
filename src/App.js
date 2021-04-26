@@ -8,10 +8,6 @@ import Resume from './components/Resume';
 import Footer from './components/Footer';
 import Project from './components/Project';
 
-
-
-
-
 function App() {
   const [categories] = useState([
     { name: '', description: '',
