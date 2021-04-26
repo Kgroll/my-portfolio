@@ -1,4 +1,4 @@
-# Repository Title:   Not Just Another Budget App     
+# Repository Title:  My Portfolio ( I know! Not very unique!!)   
     
 
   ## Table of Contents
@@ -20,7 +20,7 @@
   * [Questions](#questions)
 
 
-
+![logo192](https://user-images.githubusercontent.com/75186217/116024149-9475ad80-a61b-11eb-9893-1d9ff2939735.png)
 
 This portfolio was built with the React App
 
@@ -29,10 +29,10 @@ This portfolio was built with the React App
 A single webpage introducing myself to prospective employers. As it is my first time using  
 React it is fairly basic but the more I read the more I want to add to it!
 
-##Screenshots
 
 
-##Methods Used
+
+##Installatation
 
 ###`npm start`Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -48,6 +48,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+##Screenshots
+
 
 ## Learn More
 
