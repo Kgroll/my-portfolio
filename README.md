@@ -20,14 +20,17 @@
 
 This portfolio was built with the React App
 
-##Description
+  ## Descripition
 
 A single webpage introducing myself to prospective employers. As it is my first time using  
 React it is fairly basic but the more I read the more I want to add to it!
 
 
-##Installatation
-npm start`Runs the app in the development mode.\
+  ## Installation
+  
+   `npm start`
+   
+   Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
@@ -41,9 +44,11 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-##Link
+## Link to deployed app
 
-##Screenshots
+"https://Kgroll.github.io/my-portfolio"
+
+## Screenshots
 
 ![pf1](https://user-images.githubusercontent.com/75186217/116024291-e3bbde00-a61b-11eb-9c9d-17a2653cb93d.jpg)
 
@@ -58,7 +63,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 
-#Questions
+## Questions
 
  GitHub Link:   https://github.com/Kgroll
 
