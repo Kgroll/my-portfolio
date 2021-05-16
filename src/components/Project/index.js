@@ -5,8 +5,15 @@ const Project = () => {
   return (
     <div className="flex-row" id="projects">
 
+      {/* <div>
+        <a href="" class="grid-item currenseed">
+          <h3>Currenseed</h3>
+          <span>Final Group Project</span>
+        </a>
+      </div> */}
+
       <div>
-        <a href="https:github.com/ez-budget/e-z-budget/" class="grid-item e-z-Budget">
+        <a href="https://github.com/ez-budget/e-z-budget/" class="grid-item e-z-Budget">
           <h3>E-Z-BUDGET</h3>
           <span>Group Project 2/Fullstack Program</span>
         </a>
