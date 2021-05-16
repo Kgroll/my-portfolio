@@ -13,7 +13,7 @@ const Project = () => {
       </div> */}
 
       <div>
-        <a href="https://github.com/ez-budget/e-z-budget/" class="grid-item e-z-Budget">
+        <a href="./components/projects/https://github.com/ez-budget/e-z-budget/" class="grid-item e-z-Budget">
           <h3>E-Z-BUDGET</h3>
           <span>Group Project 2/Fullstack Program</span>
         </a>
