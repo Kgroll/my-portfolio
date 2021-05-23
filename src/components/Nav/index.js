@@ -1,20 +1,20 @@
-import React, { useEffect, navBar } from 'react';
+import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 
 function Nav(props) {
   const {
     categories = [],
-    setCurrentCategory,
+    setCurrentProject,
     contactSelected,
-    currentCategory,
+    currentProject,
     setContactSelected,
   } = props;
 
 
   useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
-  }, [currentCategory]);
+    document.title = capitalizeFirstLetter(currentProject.name);
+  }, [currentProject]);
 
   return (
 
@@ -27,8 +27,8 @@ function Nav(props) {
         </li>
         {/* portfolio */}
         <li className="mx-2">
-          <a className="portfolio" href="#portfolio" onClick={() => setContactSelected(false)}>
-            Portfolio
+          <a className="project" href="#project" onClick={() => setContactSelected(false)}>
+            Project
             </a>
         </li>
         {/* resume */}
@@ -46,19 +46,19 @@ function Nav(props) {
         {/* <li className={`mx-2 ${contactSelected && 'navActive'}`}>
             <span onClick={() => setContactSelected(true)}>Contact</span>
           </li> */}
-        {categories.map((category) => (
+        {categories.map((project) => (
           <li
-            className={`mx-1 ${currentCategory.name === category.name && !contactSelected && 'navActive'
+            className={`mx-1 ${currentProject.name === project.name && !contactSelected && 'navActive'
               }`}
-            key={category.name}
+            key={project.name}
           >
             <span
               onClick={() => {
-                setCurrentCategory(category);
+                setCurrentProject(project);
                 setContactSelected(false);
               }}
             >
-              {capitalizeFirstLetter(category.name)}
+              {capitalizeFirstLetter(project.name)}
             </span>
           </li>
         ))}
