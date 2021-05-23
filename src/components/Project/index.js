@@ -4,7 +4,8 @@ const Project = () => {
 
     return (
         <div className="flex-row" id="projects">
-            <h2>Projects</h2>
+            <h1>Projects</h1>
+            
             <div>
                 <a href="https://currenseed.herokuapp.com/" class="grid-item currenseed">
                     <h3>CurrenSeed</h3>

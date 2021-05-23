@@ -31,12 +31,7 @@ function Nav(props) {
               About me
             </a>
         </li>
-        {/* portfolio */}
-        <li className="mx-2">
-          <a className="project" href="#project" onClick={() => setContactSelected(true)}>
-            Projects
-            </a>
-        </li>
+        
         {/* resume */}
         <li className="mx-2">
           <a className="resume" href="#resume" onClick={() => setContactSelected(false)}>
@@ -49,9 +44,12 @@ function Nav(props) {
             Contact Me
             </a>
         </li>
-        <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
-          </li>
+        {/* projects */}
+        <li className="mx-2">
+          <a data-testid="projects" href="#projects" onClick={() => setContactSelected(false)}>
+            Projects
+            </a>
+        </li>
         {categories.map((project) => (
           <li
             className={`mx-1 ${currentProject.name === project.name && !contactSelected && 'navActive'
