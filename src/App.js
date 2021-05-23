@@ -13,7 +13,7 @@ function App() {
   const [projects] = useState([
     {
       name: 'E-Z-Budget',
-      image: './assets/large/projects/0.jpg', 
+      image: 'src/assets/images/projects/E-Z-Budget',
       link: 'https://ez-budget10.herokuapp.com/'
     },
   //   { name: 'portraits', description: 'Portraits of people in my life' },
@@ -39,7 +39,7 @@ function App() {
         {!contactSelected ? (
           <>
           <About></About>
-            <Gallery currentProject={currentProject}></Gallery>
+            {/* <Gallery currentProject={currentProject}></Gallery> */}
             <Project></Project>            
           </>
         ) : (

@@ -18,17 +18,23 @@ function Nav(props) {
 
   return (
 
-    <navBar>
-      <ul className="flex-row" >
-        <li className="mx-2">
-          <a className="header" href="#about" onClick={() => setContactSelected(false)}>
-            About me
+    <header className="flex-row px-1">
+      <h2>
+        <a data-testid="link" href="/">
+          {/* <span role="img" aria-label="camera"> 📸</span> Oh Snap! */}
+        </a>
+      </h2>
+      <nav>
+        <ul className="flex-row">
+          <li className="mx-2">
+            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
+              About me
             </a>
         </li>
         {/* portfolio */}
         <li className="mx-2">
           <a className="project" href="#project" onClick={() => setContactSelected(true)}>
-            Project
+            Projects
             </a>
         </li>
         {/* resume */}
@@ -43,9 +49,9 @@ function Nav(props) {
             Contact Me
             </a>
         </li>
-        {/* <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+        <li className={`mx-2 ${contactSelected && 'navActive'}`}>
             <span onClick={() => setContactSelected(true)}>Contact</span>
-          </li> */}
+          </li>
         {categories.map((project) => (
           <li
             className={`mx-1 ${currentProject.name === project.name && !contactSelected && 'navActive'
@@ -62,10 +68,12 @@ function Nav(props) {
             </span>
           </li>
         ))}
-
       </ul>
-    </navBar>
+      </nav>
+    </header>
+    
   );
+
 }
 
 export default Nav;

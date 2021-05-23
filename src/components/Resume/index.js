@@ -6,7 +6,7 @@ function Resume() {
       <h1 id='resume'>Resume</h1>
       <li>
         Front-end Knowledge: HTML, CSS, JavaScript, React
-          </li>
+      </li>
       <li>
         Back-end Knowledge: APIs, Node, Express, MySQL, Sequelize
         </li>

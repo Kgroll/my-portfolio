@@ -7,7 +7,7 @@ function Gallery(props) {
   return (
     <section>
       <h1 data-testid="h1tag">{capitalizeFirstLetter(currentProject.name)}</h1>
-      <p>{currentProject.description}</p>
+      <p>{currentProject.link}</p>
       <Project project={currentProject.name} />
     </section>
   );
