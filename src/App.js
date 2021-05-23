@@ -10,9 +10,8 @@ import Header from './components/Header';
 function App() {
   const [projects] = useState([
     {
-      name: 'E-Z-Budget',
-      image: 'src/assets/images/projects/E-Z-Budget',
-      link: 'https://ez-budget10.herokuapp.com/'
+      name: 'My Portfolio'
+    
     },
 
     ]);
