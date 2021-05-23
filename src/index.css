@@ -128,7 +128,7 @@ button[disabled] {
 }
 
 img {
-  background-image: url("./assets/large/mypic/mypic.jpg");
+  background-image: url("./assets/images/mypic/mypic.jpg");
   width: 300px;
   height: 350px;
   margin-bottom: 50px;
@@ -380,7 +380,7 @@ footer {
 } 
 
  .e-z-Budget {
-  background-image: url("./assets/large/projects/0.jpg");
+  background-image: url('./assets/images/projects/E-Z-Budget/0.jpg');
   width: 350px;
   height: 350px;
   margin-bottom: 50px;
@@ -390,7 +390,7 @@ footer {
 
 }
 .REFRAIN {
-  background-image: url("./assets/large/projects/1.png");
+  background-image: url('./assets/images/projects/RefRain/1.png');
   width: 350px;
   height: 350px;
   margin-bottom: 50px;
@@ -398,8 +398,8 @@ footer {
 } 
 
 .run-buddy {
-  background-image: url("./assets/large/projects/2.jpg");
-    width: 350px;
+  background-image: url("./assets/images/projects/Run-Buddy/2.jpg");
+  width: 350px;
   height: 350px;
   margin-bottom: 50px;
   cursor: pointer;
@@ -407,7 +407,7 @@ footer {
 }
 
 .Horiseon {
-  background-image: url("./assets/large/projects/3.jpg");
+  background-image: url("./assets/images/projects/Horiseon/3.jpg");
     width: 350px;
   height: 350px;
   margin-bottom: 50px;
@@ -417,14 +417,14 @@ footer {
 }
 
 .weather-dashboard {
-  background-image: url("./assets/large/projects/4.jpg");
+  background-image: url("./assets/images/projects/Weather-Dashboard/4.jpg");
     width: 350px;
   height: 350px;
   margin-bottom: 50px;
   cursor: pointer;
 }
-.easy-e {
-  background-image: url("./assets/large/projects/5.jpg");
+.currenseed {
+  background-image: url("./assets/images/projects/CurrenSeed/5.jpg");
     width: 350px;
   height: 350px;
   margin-bottom: 50px;
