@@ -27,7 +27,7 @@ function Nav(props) {
         </li>
         {/* portfolio */}
         <li className="mx-2">
-          <a className="project" href="#project" onClick={() => setContactSelected(false)}>
+          <a className="project" href="#project" onClick={() => setContactSelected(true)}>
             Project
             </a>
         </li>
